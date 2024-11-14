@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+          margin: auto;
+          width: 50%;
+          padding: 30px;
+          background: #e2e2e2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 data-th-text="${name}">Welcome to Akshay Mishra Page</h1>
+        <p>Youtube Channel : <span data-th-text="${YoutubeChannel}"></span></p>
+        <p>Github Repo Link : <span th:text="${Githubrepo}"></span></p>
+
+        <a th:href="${Githubrepo}">Click here to open</a>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores ea temporibus, et fugiat, 
+           adipisci fugit corrupti voluptates asperiores harum laborum, 
+           nihil qui aliquid dolorum necessitatibus. Sed veniam quis quaerat!
+        </p>
+    </div>
+</body>
+</html>
