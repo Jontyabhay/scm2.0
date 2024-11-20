@@ -19,4 +19,20 @@ public class PageController {
 
     }
 
+    //About Page
+    @RequestMapping("/about")
+    public String aboutPage()
+    {
+        System.out.println("About page loading..");
+        return "about";
+    }
+
+    //Servies Page
+    @RequestMapping("/services")
+    public String servicesPage()
+    {
+        System.out.println("Services page loading..");
+        return "services";
+    }
+
 }
