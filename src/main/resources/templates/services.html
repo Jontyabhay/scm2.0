@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>This is Services Page</h1>
-    <!--using ragments-->
-    <div th:insert="~{base :: parent('services one','services two')}"></div>
-</body>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+    <head> 
+        <title>Services Page</title>
+    </head>
+    <body>
+        <section id="content">
+            <h1>Welcome to Services Page</h1>
+            <h2>Services offered by SCM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere maiores obcaecati voluptas cumque molestias eveniet eaque, ipsum, error unde sed libero ab debitis perspiciatis nesciunt ut reiciendis dolore quisquam. Laudantium.</p>
+        </section>
+        <script>
+            console.log("services page");
+        </script>
+    </body>
 </html>
