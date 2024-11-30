@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class PageController {
-    @RequestMapping("/home")
+    @GetMapping("/home")
     public String home(Model model)
     {
         System.out.println("Home page handler");
@@ -23,7 +23,7 @@ public class PageController {
     }
 
     //About Page
-    @RequestMapping("/about")
+    @GetMapping("/about")
     public String aboutPage()
     {
         System.out.println("About page loading..");
@@ -31,7 +31,7 @@ public class PageController {
     }
 
     //Servies Page
-    @RequestMapping("/services")
+    @GetMapping("/services")
     public String servicesPage()
     {
         System.out.println("Services page loading..");
@@ -56,6 +56,7 @@ public class PageController {
     public String register() {
         return "register";
     }
+    
     
     
     
