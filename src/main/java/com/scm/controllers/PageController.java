@@ -31,7 +31,7 @@ public class PageController {
     }
 
     //Servies Page
-    @GetMapping("/services")
+    @RequestMapping("/services")
     public String servicesPage()
     {
         System.out.println("Services page loading..");
@@ -46,13 +46,13 @@ public class PageController {
     }
 
     //login page
-    @GetMapping("/login")
+    @RequestMapping("/login")
     public String login() {
         return "login";
     }
 
     //signup page
-    @GetMapping("/register")
+    @RequestMapping("/register")
     public String register() {
         return "register";
     }
