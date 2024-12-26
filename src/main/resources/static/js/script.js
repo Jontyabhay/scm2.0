@@ -10,9 +10,9 @@ function changeTheme(){
     document.querySelector("html").classList.add(currentTheme);
 
     //set the listener
-    const changeThemeButton = document.querySelector('#theme_change_button');
+    let changeThemeButton = document.querySelector('#theme_change_button');
+    let oldTheme=currentTheme;
     changeThemeButton.addEventListener('click', (event) => {
-        let oldTheme=currentTheme;
         console.log("Theme button clicked");
         document.querySelector("html").classList.remove(currentTheme);
         if (currentTheme == "dark"){
