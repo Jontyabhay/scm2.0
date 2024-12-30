@@ -67,7 +67,11 @@ public class PageController {
     public String login() {
         return "login";
     }
-
+    @GetMapping("/")
+    public String index()
+    {
+        return "redirect:/login";
+    }
     //signup page
     @RequestMapping("/register")
     public String register(Model model) {
